@@ -45,6 +45,7 @@ export const TimeEntriesProvider: React.FC<{ children: ReactNode }> = ({ childre
   );
 };
 
+// eslint-disable-next-line react-refresh/only-export-components
 export const useTimeEntries = (): TimeEntriesContextType => {
   const context = useContext(TimeEntriesContext);
   if (!context) {

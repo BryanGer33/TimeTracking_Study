@@ -3,6 +3,12 @@ import type { User } from '../types';
 // Hardcoded users
 export const MOCK_USERS: User[] = [
   {
+    id: '1',
+    username: 'admin',
+    password: 'admin123',
+    name: 'Administrator'
+  },
+  {
     id: '2',
     username: 'user',
     password: 'user123',
