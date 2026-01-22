@@ -20,3 +20,8 @@ jobs:
         run: npm install
       - name: Run Build
         run: npm run build
+      - name: Deploy
+        run: npx netlify-cli deploy --prod --dir=dist
+        env:
+          NETLIFY_AUTH_TOKEN: ${{ NETLIFY_AUTH_TOKEN }}
+          NETLIFY_SITE_ID: ${{ NETLIFY_SITE_ID }}
